@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,Verdana, Geneva, Tahoma;
+    line-height: 150%;
+    text-align: center;
+}
+body{
+    background: url('stopwatch.jpg') no-repeat center center/cover;
+   
+    background-attachment: fixed;
+}
+.container{
+    height: 150px;
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+  
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.time{
+    font-size: 3rem;
+}
+.icons{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+.play_pause,.restart{
+    background-color: green;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.play_pause::after{
+    content:'\25B6';
+    font-size: 1.5rem;
+    
+}
+.restart{
+   background-color: red;
+}
+.restart::after{
+    content:'\21BA';
+    font-size: 1.5rem;
+    
+}
+.play_pause:active,.restart:active{
+    transform: scale(0.9);
+}
+.play_pause.change{
+    background-color: orange;
+}
+.play_pause.change::after{
+    content:'\II';
+    font-size: 1.5rem;
+}

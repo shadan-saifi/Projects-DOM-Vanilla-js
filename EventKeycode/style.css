@@ -1,0 +1,18 @@
+nav{
+    background-color: aqua ;
+    padding: 30px;
+}
+body{
+    background-color: bisque;
+    text-align: center;
+}
+.project{
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table,th,td{
+    border: 1px solid black;
+
+}

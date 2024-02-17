@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    line-height: 150%;
+}
+
+body {
+    background: url('todolist.jpg') no-repeat center center/cover;
+
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputbox {
+
+    padding: 15px;
+}
+
+.lists {
+
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.inputbox {
+    height: 70px;
+    width: 400px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.input {
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.addbtn {
+    font-size: 1.5rem;
+    height: 30px;
+    width: 40px;
+    border: 1px solid green;
+    color: green;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addbtn:hover {
+    background-color: green;
+    color: white;
+}
+
+.addbtn:active {
+    transform: scale(0.9);
+}
+
+.task {
+
+    margin: 10px;
+    height: 70px;
+    width: 400px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task li{
+    flex: 1;
+    list-style-type:none;
+}
+
+.dnbtn {
+    height: 30px;
+    width: 40px;
+    font-size: 1.5rem;
+    border: 1px solid orange;
+    border-radius: 8px;
+    background-color: white;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dnbtn:hover {
+    background-color: orange;
+    color: white;
+}
+.dnbtn:active {
+    transform: scale(0.9);
+}
+
+
+.dltbtn {
+    height: 30px;
+    width: 40px;
+    font-size: 1.5rem;
+    border: 1px solid red;
+    border-radius: 8px;
+    background-color: white;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.dltbtn:hover {
+    background-color: red;
+    color: white;
+}
+.dltbtn:active {
+    transform: scale(0.9);
+}
+
+.editbtn {
+    height: 30px;
+    width: 40px;
+    font-size: 1.5rem;
+    border: 1px solid yellowgreen;
+    border-radius: 8px;
+    background-color: white;
+    color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.editbtn:hover {
+    background-color: yellowgreen;
+    color: white;
+}
+.editbtn:active {
+    transform: scale(0.9);
+}
+
+.activate {
+    text-decoration: line-through;
+}
